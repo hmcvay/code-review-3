@@ -60,6 +60,22 @@ _Live site: <https://hmcvay.github.io/code-review-3>_
 ## Tests
 ### Describe: beepBoop()
 
+Test: "It should return false if user inputs a non-number."
+<br>Code:
+<br>**const num = "123abc";**
+<br>**beepBoop(num);**
+<br>Expected Output: false
+
+<br>
+
+Test: "It should return an array with 0 if user inputs 0"
+<br>Code:
+<br>**const num = "0";**
+<br>**beepBoop(num);**
+<br>Expected Output: 0
+
+<br>
+
 Test: "It should return an array with 0 if user inputs 0"
 <br>Code:
 <br>**const num = "0";**
