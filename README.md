@@ -58,13 +58,13 @@ _Live site: <https://hmcvay.github.io/code-review-3>_
 <br>
 
 ## Tests
-### Describe: functName()
+### Describe: beepBoop()
 
-Test: "It should return true if only positive numbers are input."
+Test: "It should return an array with 0 if user inputs 0"
 <br>Code:
-<br>**const text = "28347329874234";**
-<br>**ccValidator(text);**
-<br>Expected Output: true
+<br>**const num = "0";**
+<br>**beepBoop(num);**
+<br>Expected Output: 0
 
 <br>
 
