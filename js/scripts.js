@@ -1,4 +1,5 @@
 // BUSINESS LOGIC
+
 function beepBoop(userInput) {
   const outputArray = [];
   let num = parseInt(userInput);
@@ -22,3 +23,12 @@ function beepBoop(userInput) {
   return outputArray.join();
     console.log (typeof(outputArray));
 }
+
+
+// UI LOGIC
+
+$(document).ready(function() {
+  $("form#input").submit(function(event){
+    event.preventDeafault();
+  })
+})
