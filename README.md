@@ -68,7 +68,7 @@ Test: "It should return false if user inputs a non-number."
 
 <br>
 
-Test: "It should return an array with 0 if user inputs 0"
+Test: "It should return an array with 0 if user inputs 0."
 <br>Code:
 <br>**const num = "0";**
 <br>**beepBoop(num);**
@@ -76,11 +76,11 @@ Test: "It should return an array with 0 if user inputs 0"
 
 <br>
 
-Test: "It should return an array with 0 if user inputs 0"
+Test: "It should return "Won't you be my neighbor?" if user input contains the number 3."
 <br>Code:
-<br>**const num = "0";**
+<br>**const num = "837";**
 <br>**beepBoop(num);**
-<br>Expected Output: 0
+<br>Expected Output: "Won't you be my neighbor?"
 
 <br>
 
