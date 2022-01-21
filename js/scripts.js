@@ -1,17 +1,20 @@
 // BUSINESS LOGIC
-function beepBoop(num) {
+function beepBoop(userInput) {
   const outputArray = [];
-  const inputArray = parseInt(num);
-  if ((isNaN(inputArray))) {
+  let num = parseInt(userInput);
+  if ((isNaN(num))) {
     return "Please input a valid number";
-  } else if (inputArray < 0) {
+  } else if (num < 0) {
     return "Please input a valid number";
   }
   
-  for (i=0; i <= inputArray; i++) {
-    if (i.toString().indexOf(3)) {
+  for (i=0; i <= num; i++) {
+    if (i.toString().includes('3')) {
       outputArray.push("Won't you be my neighbor?")
-    } else {
+    } else if (i.toString().includes('2')) {
+      outputArray.push()
+    }
+    {
       outputArray.push(i);
     }
   }
