@@ -3,11 +3,15 @@ function beepBoop(num) {
   const outputArray = [];
   const inputArray = parseInt(num);
   if ((isNaN(inputArray))) {
-    return false;
+    return "Please input a valid number";
   } else if (inputArray < 0) {
-    return false;
-  } else if (inputArray >= 0) {
-    for (i=0; i <= inputArray; i++) {
+    return "Please input a valid number";
+  }
+  
+  for (i=0; i <= inputArray; i++) {
+    if (i.toString().indexOf(3)) {
+      outputArray.push("Won't you be my neighbor?")
+    } else {
       outputArray.push(i);
     }
   }

@@ -84,11 +84,11 @@ Test: "It should return string array of range of values within inputted number."
 
 <br>
 
-Test: "If the string array of values includes 1, push "beep" instead of 1."
+Test: "If the string array of values includes 3, push "Won't you be my neighbor" instead of 3."
 <br>Code:
 <br>**const num = "5";**
 <br>**beepBoop(num);**
-<br>Expected Output: "[0, "beep", 2, 3, 4, 5]"
+<br>Expected Output: "[0, 1, 2, "Won't you be my neighbor?", 4, 5]"
 
 <br>
 
