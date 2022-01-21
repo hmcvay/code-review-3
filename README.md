@@ -76,11 +76,11 @@ Test: "It should return false if user inputs negative number."
 
 <br>
 
-Test: "It should return string array of all "
+Test: "It should return string array of range of values within inputted number."
 <br>Code:
-<br>**const num = "";**
+<br>**const num = "5";**
 <br>**beepBoop(num);**
-<br>Expected Output: ""
+<br>Expected Output: "[0, 1, 2, 3, 4, 5]"
 
 <br>
 
