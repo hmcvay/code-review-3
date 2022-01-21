@@ -4,14 +4,8 @@ function beepBoop(num) {
   const inputArray = parseInt(num);
   if ((isNaN(inputArray))) {
     return false;
-  } else if (inputArray >= 0) {
-    for (i = 0; i < inputArray.length; i++) {
-      if (i > 0) {
-        outputArray.push(0);
-      } else if (i )
-    }
-    
-    outputArray.push(inputArray);
+  } else if (inputArray < 0) {
+    return false;
   }
   return outputArray.join("");
     console.log (outputArray);

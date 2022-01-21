@@ -76,7 +76,7 @@ Test: "It should return false if user inputs negative number."
 
 <br>
 
-Test: "It should return "
+Test: "It should return string array of all "
 <br>Code:
 <br>**const num = "";**
 <br>**beepBoop(num);**
