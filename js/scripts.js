@@ -1,17 +1,14 @@
 // BUSINESS LOGIC
-function beepBoop(num) {
+function beepBoop(inputArray) {
   const outputArray = [];
-  const inputArray = num.split("");
   if ((isNaN(inputArray))) {
     return false;
   } else if (inputArray >= 0) {
     outputArray.push("0");
-  } else if (num > 0) {
+  } else if (inputArray > 0) {
   for (i = 0; i < inputArray; i++) {
-    if 
-
+    outputArray.push(inputArray);
     }
   }
-  }
   console.log (outputArray);
-}
+  }
