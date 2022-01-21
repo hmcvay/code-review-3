@@ -100,6 +100,14 @@ Test: "If the string array of values includes 2, push 'boop' instead of '2'."
 
 <br>
 
+Test: "If the string array of values includes 1, push 'beep' instead of '1'."
+<br>Code:
+<br>**const num = "5";**
+<br>**beepBoop(num);**
+<br>Expected Output: "[0, "beep", 2, 3, 4, 5]"
+
+<br>
+
 ***
 
 <br>

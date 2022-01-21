@@ -13,7 +13,8 @@ function beepBoop(userInput) {
       outputArray.push("Won't you be my neighbor?");
     } else if (i.toString().includes('2')) {
       outputArray.push("boop");
-    } else {
+    } else if (i)
+    else {
       outputArray.push(i);
     }
   }
