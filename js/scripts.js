@@ -30,12 +30,6 @@ function beepBoop(userInput) {
 $(document).ready(function() {
   $("form#input").submit(function(event){
     event.preventDefault();
-    let user = $('#input');
-    let robot = $('#output');
-
-    function toggleResults() {
-      $(user).toggle();
-      $(robot).toggle();
-    }
+  
   })
 })

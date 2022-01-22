@@ -3,3 +3,7 @@ font-family: monospace;
 font-style:initial;
 font-weight: bold;
 }
+
+#output {
+  display: none;
+}
