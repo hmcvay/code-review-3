@@ -33,6 +33,14 @@ $(document).ready(function() {
 
     if (inputtedNumber === false) {
       $("#input-paragraph").append("<br><p>" + "Please enter a number greater than 0." + "</p>"); 
+    } else {
+      $("#input-paragraph").hide();
+      $("#output").show();
+      $("#output").append("<br><h2>" + outputArray + "</h2>");
     }
+  })
+  $("#again").click(function() {
+    $("#output").hide();
+    $("#input-paragraph").show();
   })
 })
