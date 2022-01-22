@@ -36,11 +36,11 @@ $(document).ready(function() {
     } else {
       $("#input-paragraph").hide();
       $("#output").show();
-      $("#output").append("<br><h2>" + outputArray + "</h2>");
     }
   })
   $("#again").click(function() {
     $("#output").hide();
     $("#input-paragraph").show();
+    $("#input-paragraph").trigger("reset");
   })
 })
