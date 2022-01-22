@@ -4,9 +4,9 @@ function beepBoop(userInput) {
   const outputArray = [];
   let num = parseInt(userInput);
   if ((isNaN(num))) {
-    return "Please input a valid number";
+    return false;
   } else if (num < 0) {
-    return "Please input a valid number";
+    return false;
   }
   
   for (i=0; i <= num; i++) {
@@ -21,7 +21,6 @@ function beepBoop(userInput) {
     }
   }
   return outputArray.join();
-    console.log (typeof(outputArray));
 }
 
 
@@ -30,6 +29,10 @@ function beepBoop(userInput) {
 $(document).ready(function() {
   $("form#input").submit(function(event){
     event.preventDefault();
-  
+    inputtedNumber = beepBoop($("#number").val());
+
+    if (inputtedNumber === false) {
+      $("#input-paragraph").append("<br><p>" + "Please enter a number greater than 0." + "</p>"); 
+    }
   })
 })
