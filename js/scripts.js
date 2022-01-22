@@ -37,10 +37,12 @@ $(document).ready(function() {
       $("#input-paragraph").hide();
       $("#output").show();
     }
+
+    $("#output").append("<br><p>" + inputtedNumber + "</p>");
   })
   $("#again").click(function() {
+    $("#input-paragraph").find("form#input")[0].reset();
     $("#output").hide();
-    $("#input-paragraph").show();
-    $("#input-paragraph").trigger("reset");
+    $("#input-paragraph").show();  
   })
 })
