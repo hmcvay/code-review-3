@@ -31,15 +31,18 @@ $(document).ready(function() {
     inputtedNumber = beepBoop($("#number").val());
 
     if (inputtedNumber === false) {
-      $("#input-paragraph").append("<br><br><p>" + "Please enter a number 0 or greater." + "</p>"); 
+      $("#input-paragraph").append("<li>" + "Please enter a number 0 or greater." + "</li>");
+      $("#input").empty();  
     } else {
       $("#input-paragraph").hide();
       $("#output").show();
+      
     }
 
-    $("#output").append("<br><br><p>" + inputtedNumber + "</p>");
+    $("#output").append("<li>" + inputtedNumber + "</li>");
   })
   $("button#again").click(function() {
+    $("#result2").empty();
     $("#output").hide();
     $("#input-paragraph").show();  
   })
