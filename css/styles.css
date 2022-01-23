@@ -4,9 +4,9 @@ p {
 
 .robot {
   position: absolute;
-  width: auto;
+  left: 15%;
+  width: 350px;
   height: auto;
-  margin: 250px;
 }
 
 body {
@@ -18,29 +18,42 @@ font-style:initial;
 font-weight: bold;
 }
 
-#input {
-  background-color: black;
-  color: white;
-}
-
 #input-paragraph {
   position: relative;
-  border: solid white 2px;
+  border: double white 1px;
   width: auto;
   margin-top: 200px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
+input[type=text] {
+  background-color: black;
+  color: white;
+}
+
 .btn-outline-dark {
+  border: solid white 1px;
+  background-color: #00ff41;
+  color: black;
   margin-bottom: 30 px;
 }
 
 #output-paragraph {
+  position: relative;
   width: auto;
   display: none;
   border: solid white 2px;
   margin-top: 200px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.greenText {
+  color: #008F11;
+}
+
+
+.whiteText {
+  color: white;
 }
