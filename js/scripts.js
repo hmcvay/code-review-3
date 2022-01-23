@@ -29,20 +29,21 @@ function beepBoop(userInput) {
 $(document).ready(function() {
   $("button#submit").click(function(){
     inputtedNumber = beepBoop($("#number").val());
+    $("#number").val("");
 
     if (inputtedNumber === false) {
-      $("#input-paragraph").append("<li>" + "Please enter a number 0 or greater." + "</li>");
-      $("#input").empty();  
+      $("#input-paragraph").append("<p>" + "Please enter a number 0 or greater." + "</p>");
     } else {
+      $("p").empty();
       $("#input-paragraph").hide();
       $("#output").show();
       
     }
 
-    $("#output").append("<li>" + inputtedNumber + "</li>");
+    $("#output").append("<p>" + inputtedNumber + "</p>");
   })
   $("button#again").click(function() {
-    $("#result2").empty();
+    $("p").empty();
     $("#output").hide();
     $("#input-paragraph").show();  
   })
