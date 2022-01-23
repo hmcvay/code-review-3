@@ -1,7 +1,7 @@
 // BUSINESS LOGIC
 
 function beepBoop(userInput) {
-  const outputArray = [];
+  const outputArray = [" "];
   let num = parseInt(userInput);
   if ((isNaN(num))) {
     return false;
@@ -20,7 +20,7 @@ function beepBoop(userInput) {
       outputArray.push(i);
     }
   }
-  return outputArray.join();
+  return outputArray.join(" ");
 }
 
 
@@ -32,12 +32,12 @@ $(document).ready(function() {
     $("#number").val("");
 
     if (inputtedNumber === false) {
+      $("p").empty();
       $("#input-paragraph").append("<p>" + "Please enter a number 0 or greater." + "</p>");
     } else {
-      $("p").empty();
       $("#input-paragraph").hide();
       $("#output-paragraph").show();
-      
+      $("p").empty();
     }
 
     $("#output-paragraph").append("<p>" + inputtedNumber + "</p>");
