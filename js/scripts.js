@@ -36,15 +36,15 @@ $(document).ready(function() {
     } else {
       $("p").empty();
       $("#input-paragraph").hide();
-      $("#output").show();
+      $("#output-paragraph").show();
       
     }
 
-    $("#output").append("<p>" + inputtedNumber + "</p>");
+    $("#output-paragraph").append("<p>" + inputtedNumber + "</p>");
   })
   $("button#again").click(function() {
     $("p").empty();
-    $("#output").hide();
+    $("#output-paragraph").hide();
     $("#input-paragraph").show();  
   })
 })
