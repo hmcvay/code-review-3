@@ -27,21 +27,19 @@ function beepBoop(userInput) {
 // UI LOGIC
 
 $(document).ready(function() {
-  $("form#input").submit(function(event){
-    event.preventDefault();
+  $("button#submit").click(function(){
     inputtedNumber = beepBoop($("#number").val());
 
     if (inputtedNumber === false) {
-      $("#input-paragraph").append("<br><p>" + "Please enter a number greater than 0." + "</p>"); 
+      $("#input-paragraph").append("<br><br><p>" + "Please enter a number 0 or greater." + "</p>"); 
     } else {
       $("#input-paragraph").hide();
       $("#output").show();
     }
 
-    $("#output").append("<br><p>" + inputtedNumber + "</p>");
+    $("#output").append("<br><br><p>" + inputtedNumber + "</p>");
   })
-  $("#again").click(function() {
-    $("#input-paragraph").find("form#input")[0].reset();
+  $("button#again").click(function() {
     $("#output").hide();
     $("#input-paragraph").show();  
   })
